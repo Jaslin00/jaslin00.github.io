@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jaslin Varghese — Computer Science & Cyber Security Graduate">
+<title>Jaslin Varghese | Cyber Security & Software</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090f;--bg2:#0c111b;--card:rgba(17,23,36,.72);--text:#f4f7fb;--muted:#9aa6b7;--line:rgba(255,255,255,.1);--green:#70f6b4;--blue:#75b8ff;--max:1160px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,sans-serif;background:radial-gradient(circle at 80% 8%,rgba(112,246,180,.11),transparent 28rem),radial-gradient(circle at 10% 30%,rgba(117,184,255,.09),transparent 25rem),var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.23;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:44px 44px}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:fixed;inset:0 0 auto;z-index:20;height:74px;background:rgba(7,9,15,.68);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 20px "Space Grotesk";display:flex;gap:10px;align-items:center}.mark{width:32px;height:32px;border:1px solid rgba(112,246,180,.6);border-radius:10px;display:grid;place-items:center;color:var(--green);font-size:14px}.links{display:flex;gap:25px;color:var(--muted);font-size:14px}.links a:hover{color:#fff}.menu{display:none;background:none;border:0;color:#fff;font-size:24px}
+.hero{min-height:100vh;display:grid;align-items:center;padding:125px 0 70px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:13px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:18px}.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 16px var(--green)}
+h1{font:700 clamp(48px,7vw,86px)/.98 "Space Grotesk";letter-spacing:-.065em;margin-bottom:23px}.gradient{background:linear-gradient(100deg,#fff 30%,var(--green) 68%,var(--blue));-webkit-background-clip:text;color:transparent}
+.lead{font-size:18px;color:var(--muted);max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:600;font-size:14px;transition:.25s}.btn.primary{background:#f5f8fb;color:#080b11;border-color:#f5f8fb}.btn:hover{transform:translateY(-2px);border-color:rgba(112,246,180,.45)}.btn.primary:hover{box-shadow:0 12px 35px rgba(112,246,180,.18)}
+.hero-photo{position:relative;max-width:470px;justify-self:end}.photo-frame{border:1px solid var(--line);border-radius:30px;overflow:hidden;background:var(--card);box-shadow:0 30px 90px rgba(0,0,0,.45);transform:rotate(1deg)}.photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover}.glow{position:absolute;width:170px;height:170px;border-radius:50%;background:var(--green);filter:blur(85px);opacity:.13;right:-45px;bottom:-40px;z-index:-1}
+.badge{position:absolute;left:-35px;bottom:35px;padding:13px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(8,12,20,.88);backdrop-filter:blur(16px);box-shadow:0 20px 50px rgba(0,0,0,.35);font-size:12px;color:var(--muted)}.badge b{display:block;color:#fff;font-size:14px;margin-bottom:2px}
+section{padding:105px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}.eyebrow{color:var(--green);font:600 12px "Space Grotesk";letter-spacing:.15em;text-transform:uppercase}.section-title{font:600 clamp(30px,4vw,48px) "Space Grotesk";letter-spacing:-.04em;margin-top:8px}.section-desc{max-width:500px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{border:1px solid var(--line);background:var(--card);border-radius:var(--radius,24px);padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.18)}.panel p{color:var(--muted)}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:20px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.fact strong{display:block;font:700 26px "Space Grotesk";color:var(--green)}.fact span{font-size:13px;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill-card{border:1px solid var(--line);background:var(--card);padding:24px;border-radius:20px}.skill-card h3{font:600 18px "Space Grotesk";margin-bottom:15px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:12px;color:#cbd4df;border:1px solid var(--line);padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.025)}
+.timeline{position:relative;display:grid;gap:16px}.timeline:before{content:"";position:absolute;left:9px;top:10px;bottom:10px;width:1px;background:linear-gradient(var(--green),transparent)}.job{margin-left:32px;border:1px solid var(--line);background:var(--card);border-radius:20px;padding:25px;position:relative}.job:before{content:"";position:absolute;left:-28px;top:30px;width:9px;height:9px;border:2px solid var(--green);background:var(--bg);border-radius:50%}.job-top{display:flex;justify-content:space-between;gap:15px}.job h3{font:600 20px "Space Grotesk"}.job .date{color:var(--green);font-size:12px}.job .company{color:var(--muted);font-size:13px;margin:3px 0 10px}.job ul{padding-left:18px;color:var(--muted);font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(17,23,36,.9),rgba(10,14,23,.75));position:relative;overflow:hidden;min-height:280px}.project:after{content:"";position:absolute;width:160px;height:160px;right:-70px;top:-70px;border-radius:50%;background:var(--blue);filter:blur(70px);opacity:.10}.project-num{font:700 12px "Space Grotesk";color:var(--green)}.project h3{font:600 27px "Space Grotesk";margin:35px 0 10px}.project p{color:var(--muted);font-size:14px;max-width:600px}.stack{margin-top:20px;color:#cdd7e3;font-size:12px}.stack span{color:var(--green)}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:25px}.edu h3{font:600 20px "Space Grotesk"}.edu p{color:var(--muted);font-size:14px}.year{color:var(--green);font-size:12px;margin-bottom:8px}
+.contact{border:1px solid var(--line);border-radius:28px;padding:45px;background:linear-gradient(135deg,rgba(112,246,180,.08),rgba(117,184,255,.06),rgba(255,255,255,.02));display:flex;justify-content:space-between;gap:30px;align-items:center}.contact h2{font:600 clamp(30px,4vw,50px) "Space Grotesk";letter-spacing:-.04em}.contact p{color:var(--muted);margin-top:8px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+footer{padding:30px 0 45px;color:#6f7b8c;font-size:12px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.06)}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.links{display:none}.menu{display:block}.hero-grid,.about,.education{grid-template-columns:1fr}.hero-photo{justify-self:center;max-width:390px}.skills{grid-template-columns:1fr 1fr}.projects{grid-template-columns:1fr}.badge{left:-10px}.section-head{display:block}.section-desc{margin-top:12px}}
+@media(max-width:560px){.container{width:min(100% - 28px,var(--max))}.hero{padding-top:105px}.skills{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.contact{padding:30px;display:block}.contact-actions{justify-content:flex-start;margin-top:22px}footer{display:block}footer span{display:block;margin-top:7px}.job-top{display:block}.job .date{display:block;margin-top:4px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a class="brand" href="#top"><span class="mark">JV</span> Jaslin Varghese</a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><button class="menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button></div></nav>
+
+<main id="top">
+<section class="hero"><div class="container hero-grid">
+<div class="reveal">
+<div class="kicker"><span class="dot"></span> Open to opportunities</div>
+<h1>Building <span class="gradient">secure</span><br>digital experiences.</h1>
+<p class="lead">Computer Science & Cyber Security graduate focused on cybersecurity, Python development, and practical software engineering.</p>
+<div class="actions">
+<a class="btn primary" href="Jaslin_V_Resume.pdf" download>Download Resume ↓</a>
+<a class="btn" href="https://www.linkedin.com/in/jaslin-varghese" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a class="btn" href="https://github.com/Jaslin00" target="_blank" rel="noopener">GitHub ↗</a>
+</div>
+</div>
+<div class="hero-photo reveal">
+<div class="photo-frame"><img src="profile.jpg" alt="Jaslin Varghese professional portrait"></div>
+<div class="badge"><b>CS + Cyber Security</b>Python • Security • Software</div><div class="glow"></div>
+</div>
+</div></section>
+
+<section id="about"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">01 — About</div><h2 class="section-title">Curious by nature.<br>Security-minded by design.</h2></div><p class="section-desc">A practical, multidisciplinary foundation across software development, cybersecurity, systems, and collaboration.</p></div>
+<div class="about">
+<div class="panel reveal"><p>Computer Science and Engineering (Cyber Security) graduate with hands-on experience in academic projects, cybersecurity labs, and internships. Comfortable working with security tools, Python, C, web technologies, Linux, and core computer science concepts. Interested in building efficient applications while keeping security and usability in view.</p></div>
+<div class="facts reveal"><div class="fact"><strong>100+</strong><span>Students led through MuLearn</span></div><div class="fact"><strong>10+</strong><span>Technical events coordinated</span></div><div class="fact"><strong>3</strong><span>Core project areas</span></div><div class="fact"><strong>2026</strong><span>B.Tech graduate</span></div></div>
+</div></div></section>
+
+<section id="skills"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">02 — Toolkit</div><h2 class="section-title">Tools I work with.</h2></div></div>
+<div class="skills">
+<div class="skill-card reveal"><h3>Cybersecurity</h3><div class="tags"><span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">Burp Suite</span><span class="tag">Hydra</span><span class="tag">Autopsy</span><span class="tag">Recon-ng</span><span class="tag">Kali Linux</span></div></div>
+<div class="skill-card reveal"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">Java — Basic</span><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+<div class="skill-card reveal"><h3>Core & Dev</h3><div class="tags"><span class="tag">Data Structures</span><span class="tag">DBMS</span><span class="tag">Operating Systems</span><span class="tag">Linux</span><span class="tag">VS Code</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">03 — Experience</div><h2 class="section-title">Where I've learned by doing.</h2></div></div>
+<div class="timeline">
+<div class="job reveal"><div class="job-top"><div><h3>Cyber Security Intern</h3><div class="company">Elevate Labs · Remote</div></div><div class="date">May 2025 — Jun 2025</div></div><ul><li>Conducted network reconnaissance using Nmap and Wireshark in simulated environments.</li><li>Designed phishing simulations and analysed click-through rates for awareness reports.</li><li>Performed steganography analysis and practised password auditing with Hydra in controlled labs.</li></ul></div>
+<div class="job reveal"><div class="job-top"><div><h3>Flutter Developer Intern</h3><div class="company">METALOOP · Ernakulam, Kerala</div></div><div class="date">Jun 2025</div></div><ul><li>Built UI components and practised state-management patterns for a mobile application prototype.</li><li>Participated in agile standups and sprint planning with a cross-functional team.</li></ul></div>
+<div class="job reveal"><div class="job-top"><div><h3>Campus Co-Lead</h3><div class="company">MuLearn · University College of Engineering</div></div><div class="date">Feb 2024 — Jan 2025</div></div><ul><li>Led a chapter serving 100+ students and coordinated 10+ technical events and workshops.</li><li>Mentored junior members and helped grow active chapter participation.</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">04 — Projects</div><h2 class="section-title">Things I've built.</h2></div><p class="section-desc">Selected projects combining automation, security, backend engineering, and applied machine learning.</p></div>
+<div class="projects">
+<article class="project reveal"><div class="project-num">01 / AI + AUTOMATION</div><h3>AI-Powered Bug Triaging System</h3><p>Automates bug classification and developer assignment using zero-shot NLP, live GitHub issues, severity classification, and workload-aware assignment.</p><div class="stack"><span>Stack:</span> Python · FastAPI · DistilBERT · PyTorch · PostgreSQL · WebSockets · GitHub API</div></article>
+<article class="project reveal"><div class="project-num">02 / WEB PLATFORM</div><h3>EventHub</h3><p>A centralized college event platform for discovering events, registering for workshops, tracking standings, and managing participants through role-based access.</p><div class="stack"><span>Stack:</span> Python · HTML · CSS · JavaScript · PostgreSQL</div><div class="project-actions"><a class="smallbtn" href="https://github.com/Jaslin00/Mini-Project.git" target="_blank" rel="noopener">GitHub ↗</a></div></article>
+</div></div></section>
+
+<section id="education"><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">05 — Education</div><h2 class="section-title">Academic foundation.</h2></div></div>
+<div class="education"><div class="edu reveal"><div class="year">Nov 2022 — May 2026</div><h3>B.Tech — Computer Science & Cyber Security</h3><p>University College of Engineering, Thodupuzha, Kerala</p></div><div class="edu reveal"><div class="year">Aug 2020 — Apr 2022</div><h3>Higher Secondary — Science</h3><p>CHSS, Pothukal, Kerala</p></div></div>
+</div></section>
+
+<section><div class="container">
+<div class="section-head reveal"><div><div class="eyebrow">06 — Certifications</div><h2 class="section-title">Continuous learning.</h2></div></div>
+<div class="skills"><div class="skill-card reveal"><h3>Cybersecurity Job Simulation</h3><p style="color:var(--muted);font-size:14px">Forage · Mastercard · 2025</p></div><div class="skill-card reveal"><h3>Critical Infrastructure Protection</h3><p style="color:var(--muted);font-size:14px">OPSWAT · 2025</p></div><div class="skill-card reveal"><h3>Career Edge — Young Professional</h3><p style="color:var(--muted);font-size:14px">TCS iON · 2025</p></div></div>
+</div></section>
+
+<section id="contact"><div class="container"><div class="contact reveal"><div><div class="eyebrow">07 — Contact</div><h2>Let's build something<br>useful and secure.</h2><p>Available for opportunities across cybersecurity, software development, and Python-focused roles.</p></div><div class="contact-actions"><a class="btn primary" href="mailto:jaslinvp2004@gmail.com">Email Me</a><a class="btn" href="Jaslin_V_Resume.pdf" download>Resume ↓</a></div></div></div></section>
+</main>
+
+<footer class="container"><span>© 2026 Jaslin Varghese</span><span>Computer Science · Cyber Security · Software</span></footer>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
